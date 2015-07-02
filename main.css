@@ -18,13 +18,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #222;
+    color: #1770ff;
     font-weight: 600;
-    line-height: 1.1em;
+    line-height: 1.5em;
 }
 
 h2 {
-    margin-top: 1.3em;
+    margin-top: 2em;
 }
 
 a {
@@ -43,11 +43,15 @@ img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
+    border: 10px solid rgba(168, 14, 14, 0.12);
     border-radius: 4px;
     display: block;
     margin: 1.3em auto;
     max-width: 95%;
+}
+
+.rectangle{
+    background: linear-gradient(-45deg, #69c8e7 0%, #49d3b4 100%);
 }
 
 @-webkit-keyframes colorize {
@@ -67,3 +71,4 @@ img {
         filter: grayscale(0%);
     }
 }
+    
