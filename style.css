@@ -68,9 +68,6 @@ a{
 .bloc-lg{
 	padding:100px 50px;
 }
-.bloc-md{
-	padding:50px;
-}
 .bloc-sm{
 	padding:20px 50px;
 }
@@ -98,6 +95,19 @@ a{
 }
 .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
 	width:100%;
+}
+
+
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-center{
+	-webkit-background-size: auto;
 }
 
 
@@ -201,11 +211,8 @@ a{
 #bloc-1 h1{
 	line-height: 36px;
 }
-#bloc-4 h3{
+#signup h3{
 	font-size: 23px;
-}
-#bloc-5 h3{
-	font-size: 20px;
 }
 
 /* = NavBar
@@ -405,9 +412,6 @@ iframe{
 
 .bg-pic1{
 	background-image:url('img/pic1.jpg');
-}
-.bg-feature2{
-	background-image:url('img/feature2.jpg');
 }
 
 
