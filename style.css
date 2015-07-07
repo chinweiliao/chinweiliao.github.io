@@ -346,14 +346,6 @@ button{
 	outline: none!important;
 }
 
-.a-btn{
-	padding: 6px 10px 6px 0;
-	line-height: 1.42857143;
-	display:inline-block;
-}
-.text-center .a-btn{
-	padding: 6px 0;
-}
 .dropdown a .caret{
 	margin:0 0 0 5px}
 /* = Icons
@@ -398,14 +390,6 @@ iframe{
 
 .bgc-white{
 	background-color:#ffffff;
-}
-/* Link colour styles */
-
-.ltc-dark-gray{
-	color:#A5A5A5!important;
-}
-.ltc-dark-gray:hover{
-	color:#848484!important;
 }
 
 /* Bloc image backgrounds */
