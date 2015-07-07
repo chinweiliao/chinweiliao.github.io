@@ -18,7 +18,6 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 a{
 	color:lor:#FFFF4E!important;
 }
-
  a:hover{
 	color:#000000!important;
 	 text-decoration: none;
@@ -208,12 +207,6 @@ a{
 
 /* Bloc text custom styling */
 
-#bloc-1 h1{
-	line-height: 36px;
-}
-#signup h3{
-	font-size: 23px;
-}
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -348,19 +341,9 @@ button{
 
 .dropdown a .caret{
 	margin:0 0 0 5px}
-/* = Icons
--------------------------------------------------------------- */
-.icon-sm{
-	font-size:18px!important;
-}
 
 
-/* = Text & Icon Styles
--------------------------------------------------------------- */
-.sm-shadow{
-	text-shadow:0 1px 2px rgba(0,0,0,.3);
-}
-
+NaN
 
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
@@ -395,7 +378,7 @@ iframe{
 /* Bloc image backgrounds */
 
 .bg-pic1{
-	background-image:url('img/pic1.jpg');
+	background-image:url("img/pic1.jpg");
 }
 
 
