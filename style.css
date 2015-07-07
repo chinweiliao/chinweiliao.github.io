@@ -1,3 +1,8 @@
+#bloc-5{
+    background-color: darkgrey;
+    color: white;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	    test with pic
 /*      Built with Blocs
@@ -347,9 +352,8 @@ nav .caret{
 }
 
 .btn-d:active{
-    background:rgba(0,0,0,.1);
-    color:#FFF!important;
 
+    color:#FFF!important;
 }
 
 /* Prevent ugly blue glow on chrome and safari */
@@ -411,6 +415,11 @@ iframe{
 }
 @media (max-width: 767px)
 {
+    <!--self-defined-->
+    
+    
+    <!---------------->
+    
     .page-container{
         overflow-x: hidden;
         position:relative;
@@ -419,6 +428,9 @@ iframe{
         padding-left:10px!important; 
         padding-right:10px!important; 
     }
+    h3{
+        font-size: 22px;
+    }<!-- self-defined-->
     #hero-bloc h1{
         font-size:40px;
     }
