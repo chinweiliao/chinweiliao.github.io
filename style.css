@@ -322,16 +322,34 @@ nav .caret{
 
 /* = Buttons
 -------------------------------------------------------------- */
+#signupbutton{
+    align-content: center;
+}
+
 
 .btn{
-	margin: 0 20px 20px 0;
+	margin: 0;
+    padding: 10px 50px;
 }
 .btn.pull-right{
 	margin: 0 0 5px 5px;
 }
-.btn-d,.btn-d:hover,.btn-d:focus{
+.btn-d, .btn-d:focus{
+    position: relative;
 	color:#FFF!important;
 	background:rgba(0,0,0,.3);
+}
+
+.btn-d:hover{
+    background:rgba(0,0,0,.5);
+    color:#FFF!important;
+    top:1px;
+}
+
+.btn-d:active{
+    background:rgba(0,0,0,.1);
+    color:#FFF!important;
+
 }
 
 /* Prevent ugly blue glow on chrome and safari */
