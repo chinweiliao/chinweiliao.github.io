@@ -3,6 +3,10 @@
     color: white;
 }
 
+    #first-block{
+    margin: 100px 0px;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	    test with pic
 /*      Built with Blocs
@@ -416,7 +420,7 @@ iframe{
 @media (max-width: 767px)
 {
     <!--self-defined-->
-    
+
     
     <!---------------->
     
