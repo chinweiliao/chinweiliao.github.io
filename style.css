@@ -1,12 +1,12 @@
-#bloc-5{
-    background-color: darkgrey;
-    color: white;
+.smallmargin{
+    margin:0 4px;
 }
 
-
-
+.img-gallery{
+    width:100%;
+}
 /*-----------------------------------------------------------------------------------*/
-/*	    Project Mirror using blocs
+/*	    20150729 only email
 /*      Built with Blocs
 /*-----------------------------------------------------------------------------------*/
 
@@ -16,6 +16,7 @@ body{
     background:#FFF;
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 a:hover{text-decoration: none; cursor:pointer;}
 
@@ -26,15 +27,15 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 
 
 /* Globals type styling */
-    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
-	font-family:"Helvetica";
+ h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+	font-family:PT Sans;
 }
 
 
 /* Site container width */
 
 .container{
-	max-width:1-0px;
+	max-width:970px;
 }
 
 /* = Blocs
@@ -55,11 +56,24 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 
 /* Sizes */
 
-.bloc-lg{
-	padding:50px 50px;
+.bloc-md{
+	padding:50px;
 }
 .bloc-sm{
 	padding:20px 50px;
+}
+
+
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	background-size: auto!important;
+}
+.bg-center{
+	-webkit-background-size: auto;
+}
+.bg-tl-edge{
+	background: top left no-repeat;
 }
 
 
@@ -151,10 +165,19 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+.voffset-lg{
+	margin-top:80px;
+}
+
 /* Bloc text custom styling */
 
-#hero-bloc h1{
-	font-size:50px;
+#bloc-1 h4{
+	line-height: 25px;
 }
 
 /* = NavBar
@@ -247,71 +270,27 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 .nav > li > .dropdown a{
 	background: none!important;
 	display: block;
-	padding: 10px 15px;
+	padding: 15px 15px;
 }
 
 nav .caret{
 	margin: 0 5px;
 }
 
-/* = Hero
--------------------------------------------------------------- */
-
-.hero{
-	padding:150px 0;
-	position:relative;
-	display:inline-table;
-}
-.hero-nav{
-	position:absolute;
-	margin: 0 auto;
-	top:0;
-	left:0;
-	right:0;
-}
-.v-center{
-	width:100%;
-	height: 100%;
-	display: table;
-	table-layout: fixed;
-}
-.v-center .vc-content{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-}
-.hero .btn-dwn{
-	width: 58px;
-	height: 58px;
-	line-height: 58px;
-	margin: 0 0 0 -29px;
-	padding: 0;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 18px;
-	color: rgba(255,255,255,.8);
-	background: rgba(0,0,0,.6);
-	position: absolute;
-	left: 50%;
-	bottom: 60px;
-	border:0;
-}
-.hero .btn-dwn:hover{
-	color: rgba(255,255,255,1);
-}
-
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
 }
 .mg-lg{
 	margin-top:10px;
-	margin-bottom:10px;
+	margin-bottom:40px;
 }
 
 /* = Buttons
@@ -335,9 +314,14 @@ button{
 
 .dropdown a .caret{
 	margin:0 0 0 5px}
+/* = Icons
+-------------------------------------------------------------- */
+.icon-sm{
+	font-size:18px!important;
+}
 
 
-NaN
+
 
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
@@ -368,17 +352,33 @@ iframe{
 .bgc-white{
 	background-color:#ffffff;
 }
+.bgc-liver{
+	background-color:#505050;
+}
 
 /* Bloc image backgrounds */
 
+.bg-open-for-test{
+	background-image:url("img/open%20for%20test.jpg");
+}
 .bg-pic1{
 	background-image:url("img/pic1.jpg");
+}
+.bg-me-applying{
+	background-image:url("img/me_applying.jpg");
 }
 
 
 
 /* = Mobile adjustments 
 -------------------------------------------------------------- */
+@media (max-width: 1024px)
+{
+    .bloc{
+        padding-left: 20px; 
+        padding-right: 20px;  
+    }
+}
 @media (max-width: 768px)
 {
     .container{width:100%;}
@@ -508,7 +508,7 @@ iframe{
         padding:5px;
     }
     .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
